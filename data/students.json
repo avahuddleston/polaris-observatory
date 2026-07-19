@@ -1,0 +1,54 @@
+[
+  {
+    "id": "stu-001",
+    "name": "Maya Chen",
+    "year": "3rd Year",
+    "major": "Astrophysics",
+    "email": "maya.chen@university.edu",
+    "phone": "(555) 012-3344",
+    "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=faces",
+    "qualifications": ["Polaris Observing", "Data Reduction"],
+    "classes": ["Observational Astronomy", "Stellar Physics", "Statistical Methods"],
+    "resumeUrl": "https://example.com/resumes/maya-chen.pdf",
+    "bio": "Focused on variable star photometry and pipeline automation."
+  },
+  {
+    "id": "stu-002",
+    "name": "Jordan Reyes",
+    "year": "4th Year",
+    "major": "Physics",
+    "email": "jordan.reyes@university.edu",
+    "phone": "(555) 019-2281",
+    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces",
+    "qualifications": ["Lick Observing", "Polaris Observing"],
+    "classes": ["Radiative Processes", "Instrumentation Lab"],
+    "resumeUrl": "https://example.com/resumes/jordan-reyes.pdf",
+    "bio": "Runs the spectrograph calibration checks before observing nights."
+  },
+  {
+    "id": "stu-003",
+    "name": "Priya Nair",
+    "year": "2nd Year",
+    "major": "Astronomy",
+    "email": "priya.nair@university.edu",
+    "phone": "(555) 044-7710",
+    "photo": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=400&fit=crop&crop=faces",
+    "qualifications": ["Data Reduction"],
+    "classes": ["Intro to Astrophysics", "Python for Scientists"],
+    "resumeUrl": "https://example.com/resumes/priya-nair.pdf",
+    "bio": "New to the group, currently training on the reduction pipeline."
+  },
+  {
+    "id": "stu-004",
+    "name": "Sam Okafor",
+    "year": "1st Year Grad",
+    "major": "Astrophysics (MS)",
+    "email": "sam.okafor@university.edu",
+    "phone": "(555) 088-6602",
+    "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces",
+    "qualifications": ["Lick Observing", "Polaris Observing", "Data Reduction"],
+    "classes": ["Galactic Dynamics", "Advanced Observational Techniques"],
+    "resumeUrl": "https://example.com/resumes/sam-okafor.pdf",
+    "bio": "Group's senior observer this year; trains new students on-site."
+  }
+]

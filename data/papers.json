@@ -1,0 +1,20 @@
+[
+  {
+    "id": "pap-001",
+    "title": "Photometric Monitoring of RR Lyrae Variables from Polaris Observatory",
+    "authors": "M. Chen, S. Okafor, et al.",
+    "year": 2025,
+    "venue": "Publications of the Astronomical Society",
+    "url": "https://example.com/papers/rr-lyrae-2025.pdf",
+    "addedBy": "stu-001"
+  },
+  {
+    "id": "pap-002",
+    "title": "An Automated Data Reduction Pipeline for Small-Aperture Spectroscopy",
+    "authors": "J. Reyes, P. Nair",
+    "year": 2024,
+    "venue": "Journal of Astronomical Instrumentation",
+    "url": "https://example.com/papers/pipeline-2024.pdf",
+    "addedBy": "stu-002"
+  }
+]
