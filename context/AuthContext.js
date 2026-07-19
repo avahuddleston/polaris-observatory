@@ -38,28 +38,18 @@ export function AuthProvider({ children }) {
   }, [fetchProfile]);
 
   // Creates the auth account AND the linked profile row in one step.
+  // Creates the auth account. The linked profile row is created automatically
+  // by a database trigger (see profile-trigger-setup.sql), using this metadata -
+  // this avoids an RLS failure when email confirmation is required, since the
+  // client isn't "logged in" yet at the moment of signup.
   const signUp = async ({ email, password, name, year, major, phone }) => {
-    const { data, error } = await supabase.auth.signUp({ email, password });
-    if (error) return { error };
-
-    const userId = data.user?.id;
-    if (userId) {
-      const { error: profileError } = await supabase.from("profiles").insert({
-        id: userId,
-        name,
-        year,
-        major,
-        phone,
-        email,
-        qualifications: [],
-        classes: [],
-      });
-      if (profileError) return { error: profileError };
-      await fetchProfile(userId);
-    }
-    return { data };
+    const { error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: { data: { name, year, major, phone } },
+    });
+    return { error };
   };
-
   const login = async (email, password) => {
     const { error } = await supabase.auth.signInWithPassword({ email, password });
     return { error };
