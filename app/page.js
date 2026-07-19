@@ -68,7 +68,7 @@ export default function HomePage() {
               alt="Star trails over the Polaris Observatory dome"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
+              className="object-cover object-[center_75%]"
               priority
             />
           </div>
@@ -149,7 +149,7 @@ export default function HomePage() {
         <div className="grid gap-4 sm:grid-cols-3">
           {(galleryPhotos || SITE_PHOTOS.map((url) => ({ id: url, url, caption: "" }))).map((p) => (
             <div key={p.id} className="relative h-48 overflow-hidden rounded-2xl border border-line">
-              <Image src={p.url} alt={p.caption || "Observatory"} fill sizes="33vw" className="object-cover object-[center_75%]" />
+              <Image src={p.url} alt={p.caption || "Observatory"} fill sizes="33vw" className="object-cover" />
             </div>
           ))}
         </div>
